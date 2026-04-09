@@ -25,8 +25,8 @@ export default function Projects() {
       description:
         "A modern and responsive personal portfolio built with React. It showcases projects, skills, and contact information through reusable components and a clean, professional design.",
       image: "/assets/pics/protfail.png",
-      liveLink: "#",
-      repoLink: "#",
+      liveLink: "m7mad-portfolio.netlify.app",
+      repoLink: "https://github.com/M7madMeDo/myPortfolio.git",
     },
   ];
   return (
