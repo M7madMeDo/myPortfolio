@@ -9,7 +9,7 @@ export default function Error() {
           <Col md={8} lg={6}>
             <div className="mb-4">
               <img
-                src="/public/assets/pics/Error404.webp"
+                src="/assets/pics/Error404.webp"
                 alt="404 Error"
                 className="img-fluid rounded-4 shadow-lg mb-3"
               />
