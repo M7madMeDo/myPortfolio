@@ -6,7 +6,7 @@ export default function About() {
         <Row className="align-items-center">
           <Col lg={5} className="mb-4 mb-lg-0 text-center">
             <img
-              src="//assets/pics/Figma.webp"
+              src="/assets/pics/Figma.webp"
               alt="Working on code"
               className="img-fluid rounded-circle shadow-lg"
             />

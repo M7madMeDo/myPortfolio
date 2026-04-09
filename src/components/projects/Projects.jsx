@@ -8,7 +8,7 @@ export default function Projects() {
       title: "ToDo List",
       description:
         "A simple and intuitive task management application that allows users to add, edit, delete, and organize daily tasks efficiently. It features local storage to ensure data persistence and a clean, user-friendly interface.",
-      image: "/public/assets/pics/todolist.webp",
+      image: "/assets/pics/todolist.webp",
       liveLink: "https://todolist-medo.netlify.app/",
       repoLink: "https://github.com/M7madMeDo/TodoList.git",
     },
@@ -16,7 +16,7 @@ export default function Projects() {
       title: "Bookmarker",
       description:
         "A web application designed to save and manage favorite website links. Users can easily add, visit, and delete bookmarks, with data stored locally for quick and reliable access.",
-      image: "/public/assets/pics/book.webp",
+      image: "/assets/pics/book.webp",
       liveLink: "https://bookmark-medo.netlify.app/",
       repoLink: "https://github.com/M7madMeDo/bookmarker.git",
     },
@@ -24,7 +24,7 @@ export default function Projects() {
       title: "React Portfolio",
       description:
         "A modern and responsive personal portfolio built with React. It showcases projects, skills, and contact information through reusable components and a clean, professional design.",
-      image: "/public/assets/pics/protfail.png",
+      image: "/assets/pics/protfail.png",
       liveLink: "#",
       repoLink: "#",
     },

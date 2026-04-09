@@ -42,7 +42,7 @@ export default function Herosection() {
           </Col>
           <Col md={5} className="text-center">
             <img
-              src="/public/assets/pics/Programming-amico.webp"
+              src="/assets/pics/Programming-amico.webp"
               alt="Profolio-IMG"
               className="img-thumbnail rounded-circle  "
             />
