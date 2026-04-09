@@ -32,8 +32,9 @@ export default function Herosection() {
                 variant="outline-dark"
                 size="lg"
                 className="mb-2"
-                href="/cv.pdf"
+                href="/assets/file/Mohamed Ahamed Cv Fornt-End.pdf"
                 target="_blank"
+                download="Mohamed_Ahamed_CV.pdf"
               >
                 <FontAwesomeIcon icon={faDownload} className="me-2" />
                 Download CV
