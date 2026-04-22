@@ -32,7 +32,7 @@ export default function Herosection() {
                 variant="outline-dark"
                 size="lg"
                 className="mb-2"
-                href="/assets/file/Mohamed Ahamed Cv Fornt-End.pdf"
+                href="/assets/file/Front-End , Mohamed Ahmed.pdf"
                 target="_blank"
                 download="Mohamed_Ahamed_CV.pdf"
               >
