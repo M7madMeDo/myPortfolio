@@ -40,6 +40,15 @@ export default function Projects() {
       liveLink: "",
       repoLink: "https://github.com/M7madMeDo/crypto-money-tracker",
     },
+    {
+      id: 5,
+      title: "E-Commerce",
+      description:
+        "A fully responsive E-Commerce application built with React and Tailwind CSS, leveraging the DummyJSON API for dynamic product management. The project features a secure authentication system via js-cookies, a scalable folder architecture, and a seamless user experience powered by React Router and Sweet Alert.",
+      image: "/assets/pics/e-Commerce.webp",
+      liveLink: "https://e-commerce-react-black-sigma.vercel.app/",
+      repoLink: "https://github.com/M7madMeDo/E-Commerce-React",
+    },
   ];
 
   return (

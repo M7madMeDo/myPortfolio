@@ -7,6 +7,7 @@ import {
   faReact,
   faBootstrap,
   faGithub,
+  faTailwindCss,
 } from "@fortawesome/free-brands-svg-icons";
 
 const skills = [
@@ -15,6 +16,7 @@ const skills = [
   { name: "JavaScript", icon: faJs, color: "#F7DF1E" },
   { name: "React", icon: faReact, color: "#61DAFB" },
   { name: "Bootstrap", icon: faBootstrap, color: "#7952B3" },
+  { name: "Tailwind", icon: faTailwindCss, color: "#06B6D4" },
   { name: "GitHub", icon: faGithub, color: "#181717" },
 ];
 export default function Skills() {
