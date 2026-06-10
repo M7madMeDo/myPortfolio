@@ -1,7 +1,7 @@
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
+
 export default function Projects() {
   const projectList = [
     {
@@ -52,59 +52,75 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-5 bg-light">
-      <Container>
-        <h2 className="text-center fw-bold mb-5 text-dark">
-          Featured Projects
-        </h2>
-        <Row className="g-4   justify-content-start">
+    <section id="projects" className="py-20 lg:py-32 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16 lg:mb-20">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-tight">
+            Featured Projects
+          </h2>
+          <div className="w-16 h-1 bg-black mx-auto mt-6"></div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {projectList.map((project) => (
-            <Col
-              md={6}
-              lg={4}
+            <div
               key={project.id}
-              className="d-flex align-items-center "
+              className="group flex flex-col bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:-translate-y-2 transition-all duration-300"
             >
-              <Card className="w-100 shadow-sm border-0 d-flex flex-column">
-                <Card.Img
-                  variant="top"
+              <div className="relative h-64 overflow-hidden bg-gray-100 border-b border-gray-50">
+                <img
                   src={project.image}
                   alt={project.title}
-                  style={{ height: "250px", objectFit: "cover" }}
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                 />
-                <Card.Body className="d-flex flex-column">
-                  <Card.Title className="fw-bold fs-5 mb-3">
-                    {project.title}
-                  </Card.Title>
-                  <Card.Text className="text-secondary mb-4 flex-grow-1">
-                    {project.description}
-                  </Card.Text>
-                  <div className="d-flex justify-content-between mt-auto">
-                    <Button
-                      variant="primary"
-                      href={project.liveLink || "#"}
+              </div>
+
+              <div className="flex flex-col flex-1 p-6 sm:p-8">
+                <h3 className="text-xl font-extrabold text-gray-900 mb-3 tracking-tight group-hover:text-gray-600 transition-colors">
+                  {project.title}
+                </h3>
+
+                <p className="text-gray-500 text-sm sm:text-base leading-relaxed mb-8 flex-1">
+                  {project.description}
+                </p>
+
+                <div className="flex items-center gap-3 mt-auto pt-6 border-t border-gray-100">
+                  {project.liveLink ? (
+                    <a
+                      href={project.liveLink}
                       target="_blank"
-                      className="d-flex align-items-center"
+                      rel="noopener noreferrer"
+                      className="flex-1 inline-flex justify-center items-center gap-2 px-4 py-3 bg-gray-950 text-white rounded-xl text-sm font-semibold hover:bg-gray-800 transition-colors active:scale-95 shadow-sm"
                     >
-                      <FontAwesomeIcon icon={faCode} className="me-2" />
-                      {project.liveLink ? "Live Demo" : "No Demo yet"}
-                    </Button>
-                    <Button
-                      variant="outline-dark"
-                      href={project.repoLink}
-                      target="_blank"
-                      className="d-flex align-items-center"
+                      <FontAwesomeIcon icon={faCode} />
+                      Live Demo
+                    </a>
+                  ) : (
+                    <button
+                      disabled
+                      className="flex-1 inline-flex justify-center items-center gap-2 px-4 py-3 bg-gray-100 text-gray-400 rounded-xl text-sm font-semibold cursor-not-allowed opacity-70"
                     >
-                      <FontAwesomeIcon icon={faGithub} className="me-2" />{" "}
-                      Source
-                    </Button>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Col>
+                      <FontAwesomeIcon icon={faCode} />
+                      No Demo Yet
+                    </button>
+                  )}
+
+                  <a
+                    href={project.repoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex justify-center items-center gap-2 px-4 py-3 bg-white text-gray-900 border border-gray-200 rounded-xl text-sm font-semibold hover:bg-gray-50 hover:border-gray-300 transition-colors active:scale-95"
+                  >
+                    <FontAwesomeIcon icon={faGithub} size="lg" />
+                    Source
+                  </a>
+                </div>
+              </div>
+            </div>
           ))}
-        </Row>
-      </Container>
+        </div>
+      </div>
     </section>
   );
 }

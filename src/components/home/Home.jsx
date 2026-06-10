@@ -5,11 +5,11 @@ import Skills from "../skills/Skills";
 
 export default function Home() {
   return (
-    <>
+    <main className="w-full overflow-hidden bg-white">
       <Herosection />
       <Skills />
       <Projects />
       <About />
-    </>
+    </main>
   );
 }
