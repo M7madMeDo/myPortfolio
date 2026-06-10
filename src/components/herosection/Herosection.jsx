@@ -28,11 +28,12 @@ export default function Herosection() {
                 <FontAwesomeIcon icon={faCode} className="me-2" />
                 View Projects
               </Button>
+
               <Button
                 variant="outline-dark"
                 size="lg"
                 className="mb-2"
-                href="/assets/file/Front-End , Mohamed Ahmed.pdf"
+                href="/assets/file/Front-End-Mohamed-Ahmed.pdf"
                 target="_blank"
                 download="Mohamed_Ahamed_CV.pdf"
               >
